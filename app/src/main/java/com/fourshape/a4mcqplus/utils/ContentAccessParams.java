@@ -11,6 +11,12 @@ public class ContentAccessParams {
     ACCESS_MCQ_EXAM_WISE = "mcqs_exam_wise",
     ACCESS_MCQ_NORMALLY = "mcqs_normally",
     REPORT_MCQ = "report_mcq";
+    
+    /*
+    After Adding PRODUCTION_DOMAIN_ARR, SERVER_URL_ARR, F_ACCESS_USERNAME, F_ACCESS_PASSWORD, FILE_UPLOAD_DIR, this app will start fetching response
+    in a normal way.
+    */
+    
 
     private final char[] PRODUCTION_DOMAIN_ARR = {};
     private final char[] DEVELOPMENT_DOMAIN_ARR = {'h', 't', 't', 'p', ':', '/', '/', 'l', 'o', 'c', 'a', 'l', 'h', 'o', 's', 't', ':', '8', '0', '8', '0', '/'};
