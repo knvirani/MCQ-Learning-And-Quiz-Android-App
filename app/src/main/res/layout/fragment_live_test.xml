@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.LiveTestFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/container_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background_color">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/top_row"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/live_test_controller_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@color/dynamic_divider_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dynamic_divider_height"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/rules_with_btn_container"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/ads_container"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/rules_container"/>
+
+                    <Button
+                        android:id="@+id/test_start_btn"
+                        android:text="Start Live Test"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="50dp"
+                        android:backgroundTint="@color/test_start_btn_bg_tint"
+                        android:drawableEnd="@drawable/ic_start_test"
+                        android:drawableTint="@color/test_start_btn_text"
+                        android:textColor="@color/test_start_btn_text"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/question_container"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/standard_vertical_padding"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/options_container"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/standard_vertical_padding"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/radio_options_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/dynamic_mcq_live_test_options"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_circular"
+        android:indeterminate="true"
+        android:indeterminateBehavior="cycle"
+        app:indicatorColor="@color/app_progress_circle_color"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/go_back_btn"
+        android:text="Go back"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/test_start_btn_bg_tint"
+        android:drawableEnd="@drawable/ic_forward"
+        android:drawableTint="@color/test_start_btn_text"
+        android:textColor="@color/test_start_btn_text"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+
+    <Button
+        android:id="@+id/check_test_result_btn"
+        android:text="Check Result"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/check_result_btn_bg"
+        android:drawableEnd="@drawable/ic_check_filled"
+        android:drawableTint="@color/check_result_btn_text"
+        android:textColor="@color/test_start_btn_text"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/err_mtrl_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/err_data_load_view_bg"
+        app:cardCornerRadius="@dimen/card_view_no_radius"
+        app:cardElevation="@dimen/card_view_elevation">
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:paddingHorizontal="@dimen/standard_horizontal_padding"
+            android:paddingVertical="@dimen/standard_half_padding"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="Failed to load. Retry"
+            android:textColor="@color/err_data_load_view_text"
+            android:textSize="@dimen/list_card_view_title_label_text_size"
+            android:drawableEnd="@drawable/ic_refresh"
+            android:drawableTint="@color/err_data_load_view_text"
+            android:drawablePadding="@dimen/standard_half_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>

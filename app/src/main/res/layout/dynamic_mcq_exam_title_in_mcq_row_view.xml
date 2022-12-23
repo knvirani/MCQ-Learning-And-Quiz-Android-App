@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mtrl_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/app_background_color"
+        app:cardCornerRadius="@dimen/card_view_no_radius"
+        app:cardElevation="@dimen/card_view_elevation">
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:paddingHorizontal="@dimen/standard_horizontal_padding"
+            android:paddingVertical="@dimen/standard_half_padding"
+            android:gravity="center_vertical|end"
+            android:text="@string/mcq_exam_name_text"
+            android:textColor="@color/list_card_view_title_label"
+            android:textSize="@dimen/mcq_exam_title_text_size"
+            android:drawableStart="@drawable/ic_flag"
+            android:drawablePadding="@dimen/standard_half_padding"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

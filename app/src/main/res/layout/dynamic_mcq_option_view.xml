@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mtrl_card_view"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardBackgroundColor="@color/app_background_color"
+        app:cardCornerRadius="@dimen/card_view_no_radius"
+        app:cardElevation="@dimen/card_view_elevation">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/index_text_view"
+                    android:paddingHorizontal="@dimen/standard_horizontal_padding"
+                    android:textSize="@dimen/test_mcq_question_size"
+                    android:text="1."
+                    android:textColor="@color/test_mcq_options"
+                    android:gravity="center"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:paddingVertical="@dimen/standard_half_padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/mcq_text"
+                    android:visibility="visible"
+                    android:layout_marginEnd="@dimen/standard_horizontal_padding"
+                    android:textSize="@dimen/test_mcq_option_size"
+                    android:text="@string/test_option"
+                    android:textColor="@color/test_mcq_options"
+                    android:paddingVertical="@dimen/standard_half_padding"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/mtrl_card_question_img"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="150dp"
+                    android:layout_marginEnd="@dimen/standard_horizontal_padding"
+                    app:strokeWidth="@dimen/test_img_card_view_stroke_width"
+                    app:cardBackgroundColor="@color/app_background_color"
+                    app:strokeColor="@color/dynamic_divider_color"
+                    app:cardElevation="@dimen/card_view_elevation"
+                    app:cardCornerRadius="@dimen/test_img_card_corner_radius">
+
+                    <ImageView
+                        android:id="@+id/mcq_img"
+                        android:src="@drawable/test_question"
+                        android:layout_width="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_height="100dp"/>
+
+                    <ImageView
+                        android:id="@+id/mcq_img_handler"
+                        android:tint="@color/image_enlarge_btn"
+                        android:src="@drawable/ic_fullscreen"
+                        android:paddingHorizontal="@dimen/standard_half_padding"
+                        android:paddingVertical="@dimen/standard_half_padding"
+                        android:layout_gravity="bottom|end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

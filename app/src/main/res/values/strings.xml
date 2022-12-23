@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">GujMCQ</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <string name="nav_theme">Theme</string>
+    <string name="nav_share_app">Share</string>
+    <string name="nav_more_apps">More Apps</string>
+    <string name="nav_rate_us">Rate Us</string>
+
+    <string name="nav_contact">Contact</string>
+    <string name="nav_about">About</string>
+    <string name="nav_privacy_policy">Privacy Policy</string>
+    <string name="other">Other</string>
+    <string name="app_logo">App Logo</string>
+
+    <string-array name="nav_item_activities_titles">
+        <item>Contact Us</item>
+        <item>About</item>
+        <item>Privacy Policy</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="permission_text">Permission</string>
+    <string name="permission_details">Full access to internet, network state. Read and write access to device\'s storage.</string>
+    <string name="information_we_collect_text">Information we collect</string>
+    <string name="information_we_collect_details">If you contact us through the method shown in this app, then we can collect following personal information.\n\n• Name, Email address\n\nWe can also collect information about videos you like or add to watch later on this app. In addition, to provide a better experience and improve our system, we run Analytics like Google Analytics to collect more information like app crash reasons, user\'s gestures, and many more. Furthermore, we also run ads on our app through the 3rd-party ad-platform.</string>
+    <string name="gdpr_consent_message">Checking for GDPR Consent, if you\'re belong to EEA or UK region.</string>
+
+    <string name="welcome_purpose_text">આ એપ મુખ્યત્વે ગુજરાત ગૌણ સેવા પસંદગી બોર્ડ અને ગુજરાત પંચાયત સેવા પસંદગી બોર્ડની વર્ગ-3 ની પરીક્ષાઓની તૈયારી માટે બનાવવામાં આવી છે. આ એપમાં, તમે MCQ ટેસ્ટ આપી શકો છો અને, ત્વરિત પરિણામ જોઈ શકો છો. તમે પાઠ્યપુસ્તકની જેમ MCQ પણ વાંચી શકો છો. વધુમાં, તમે આ એપ્લિકેશનનો ઉપયોગ ગમે ત્યારે ગમે ત્યાં મફતમાં કરી શકો છો.</string>
+    <string name="dark_text">Dark</string>
+    <string name="light_text">Light</string>
+    <string name="subject_wise_proceed_text">Subject-wise</string>
+    <string name="exampaper_wise_proceed_text">Exam Papers-wise</string>
+
+    <string name="test_question">આ એપ મુખ્યત્વે ગુજરાત ગૌણ સેવા પસંદગી બોર્ડ અને ગુજરાત પંચાયત સેવા પસંદગી ?</string>
+    <string name="test_option">ગુજરાત ગૌણ સેવા પસંદગી બોર્ડ પરીક્ષાઓની તૈયારી માટે બનાવવામાં આવી છે. આ એપમાં, તમે MCQ ટેસ્ટ આપી શકો છો</string>
+    <string name="just_read">Read MCQs</string>
+    <string name="live_test">Give MCQ Test</string>
+
+    <string name="cancel_test_dialog_title">શું તમે ટેસ્ટ રદ કરવા માંગો છો?</string>
+    <string name="cancel_test_dialog_message">આમ કરવાથી, પરિણામ દર્શાવ્યા વિના પરીક્ષા રદ કરવામાં આવશે.</string>
+
+    <string name="test_list_fragment_notice">અહીં દર્શાવેલ દરેક ટેસ્ટમાં વાંચવા માટે અથવા લાઇવ ટેસ્ટ માટે 10 MCQ છે. જો કે, અહીં દર્શાવેલ સૌથી છેલ્લી કસોટીમાં 10 કરતા ઓછા હોઈ શકે છે.</string>
+    <string name="alert_update_message">તમે આ એપના ખૂબ જૂના વર્ઝનનો ઉપયોગ કરી રહ્યાં છો. તે થોડા દિવસો પછી કામ કરવાનું બંધ કરી શકે છે. તેથી, તેને હમણાં અપડેટ કરવું વધુ સારું છે.</string>
+    <string name="subject_wise_entry_message">જો તમે MCQ વાંચવા અને/અથવા લાઈવ-ટેસ્ટ વિષય મુજબ આપવા માંગતા હોય તો આ વિકલ્પ પસંદ કરો. અહીં, તમારે એક વિષય પસંદ કરવો પડશે, પછી તેમાંથી એક વિભાગ, અને પછી, તમે પરીક્ષા પસંદ કરી શકો છો અને તેના માટે જઈ શકો છો.</string>
+    <string name="exam_wise_entry_message">આ વિકલ્પ પસંદ કરો, જો તમે અગાઉની પરીક્ષા મુજબ પૂછાયેલા MCQs વાંચવા અને/અથવા લાઈવ-ટેસ્ટ આપવા માંગતા હોવ. અહીં, તમારે અગાઉ આયોજિત-પરીક્ષા પસંદ કરવાની રહેશે અને પછી યાદીમાંથી ઘણી પરીક્ષાઓમાંથી એક પરીક્ષા (જેમાં 10 MCQ હોય છે) પસંદ કરવાની રહેશે.</string>
+
+    <string name="rules_of_test">લાઇવ-ટેસ્ટના નિયમો</string>
+    <string name="no_modification_in_selected_options">તમે 5 માંથી માત્ર એક વિકલ્પ પસંદ કરી શકો છો. એકવાર વિકલ્પ પસંદ થઈ જાય પછી તમે તમારી પસંદગી બદલી શકશો નહીં.</string>
+    <string name="you_can_skip_mcq">તમે હમણાં માટે પ્રશ્ન છોડી શકો છો, જો તમે તેને જોયો કે તરત જ તેનો જવાબ આપવા માંગતા નથી. પરંતુ, પરીક્ષા-પરિણામ ફક્ત ત્યારે જ બતાવવામાં આવશે જો તમે બધા પ્રશ્નોના જવાબ આપ્યા હશે.</string>
+    <string name="no_time_limit">સમગ્ર પરીક્ષા દરમિયાન કોઈ સમય-મર્યાદા નહીં. પરંતુ, તમે દરેક નવા પ્રશ્ન પર વિતાવેલો સમય તમને બતાવવા માટે રેકોર્ડ કરવામાં આવશે. તે તમને તમારી કાર્યક્ષમતા બતાવશે.</string>
+    <string name="cancel_exam_text">તમે ગમે ત્યારે લાઇવ પરીક્ષા રદ કરી શકો છો. પરંતુ, આમ કરવાથી, તમારા જવાબ આપેલા પ્રશ્નોનું પરિણામ દેખાશે નહીં.</string>
+    <string name="mcq_image_handler_title">પ્રશ્ન અને વિકલ્પો જેમાં આકૃતિ હોય છે, તેમાં ઝૂમ કરવા, ફરીથી લોડ કરવા અથવા તે લોડ થઈ રહ્યું છે કે કેમ તે બતાવવા માટે નીચે-જમણા ખૂણે એક બટન હશે.</string>
+    <string name="figure_is_being_load">આકૃતિ ડાઉનલોડ થઈ રહી છે.</string>
+    <string name="figure_is_ready">આકૃતિ ડાઉનલોડ થઈ ગઈ છે અને ઝૂમ કરવા માટે તૈયાર છે.</string>
+    <string name="figure_is_failed_to_download">આકૃતિ ડાઉનલોડ કરવામાં નિષ્ફળ રહી. તેને ફરીથી ડાઉનલોડ કરવા માટે આ બટન પર ક્લિક કરો.</string>
+    <string name="can_contact_for_dis_satisfaction">જો તમે પરિણામમાં અમારા દ્વારા દર્શાવેલ કોઈપણ સાચા જવાબોથી અસંતુષ્ટ છો, તો તમે તેને પડકારી શકો છો. આ કિસ્સામાં, તમારે તમારા ઈમેલ-આઈડી સાથે વિગતવાર મુદ્દો સબમિટ કરવો પડશે અને, અમે યોગ્ય પ્રતિસાદ સાથે તમારો સંપર્ક કરીશું.</string>
+
+    <string name="app_share_message">GSSSB અને GPSSB વર્ગ-3 ની પરીક્ષાઓમાં અત્યાર સુધી પૂછવામાં આવેલા 50,000+ MCQ ની લાઈવ-ટેસ્ટ મફતમાં આપો, માત્ર 4MCQ Plus પર. ગૂગલ પ્લે સ્ટોર પરથી એપ મેળવો - https://play.google.com/store/apps/details?id=com.fourshape.a4mcqplus.</string>
+
+    <string name="subject_wise_title">વિષય મુજબ</string>
+    <string name="exam_wise_title">અગાઉ લેવાયેલી પરીક્ષાઓ મુજબ</string>
+    <string name="list_of_topics">વિષયોની યાદી</string>
+    <string name="list_of_previously_held_exams">અગાઉ લેવાયેલ પરીક્ષાઓની યાદી</string>
+
+    <string name="total_tests">કુલ લાઇવ-ટેસ્ટ</string>
+    <string name="total_hours">કુલ કલાકો</string>
+    <string name="saved_results">Saved Results</string>
+
+    <string name="all_exam_bodies">પરીક્ષાનું સંચાલન કરતી તમામ સંસ્થાઓ, જેમ કે GSSSB, GPSSB</string>
+    <string name="exam_body_wise">પરીક્ષાનું સંચાલન કરતી સંસ્થાઓ મુજબ</string>
+    <string name="list_of_exam_bodies">પરીક્ષાનું સંચાલન કરતી સંસ્થાઓની યાદી</string>
+    <string name="explained_solution">Explained Solution</string>
+
+    <string name="mcq_exam_name_text">GSSSB Office Assistance &amp; Clerk 2016</string>
+    <string name="small_notice_enlarged_view_popup">Use your fingers to zoom-in or out the image.</string>
+    <string name="remove_ads">Remove Ads</string>
+
+    <string name="review_dialog_headline">મોટાભાઈ, એપ મદદરૂપ લાગ્યો કે ?</string>
+    <string name="review_dialog_subtitle">જો હા તો,</string>
+    <string name="review_now_btn">Play Store માં રીવ્યુ આપો.</string>
+    <string name="review_cancel_btn">Later</string>
+    <string name="contact_on_twitter">Join us on Twitter</string>
+    <string name="more_apps">More Apps</string>
+    <string name="open_app">Open App</string>
+    <string name="get_app">Get App on Play Store</string>
+    <string name="about">About</string>
+    <string name="join_us_on_twitter">Join us on Twitter</string>
+    <string name="read_full_policy">Read full Policy</string>
+
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/correct_answer"
+        android:textColor="@color/correct_answer"
+        android:text="Correct"
+        android:textSize="@dimen/live_test_timer_text"
+        android:layout_marginStart="@dimen/standard_horizontal_padding"
+        android:fontFamily="@font/roboto_regular"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_check_filled"
+        android:drawablePadding="@dimen/standard_half_padding"
+        android:drawableTint="@color/correct_answer"
+        android:paddingVertical="@dimen/standard_vertical_padding"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/wrong_answer"
+        android:textColor="@color/incorrect_answer"
+        android:text="Wrong"
+        android:visibility="visible"
+        android:textSize="@dimen/live_test_timer_text"
+        android:layout_marginStart="@dimen/standard_horizontal_padding"
+        android:fontFamily="@font/roboto_regular"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_wrong_answer"
+        android:drawablePadding="@dimen/standard_half_padding"
+        android:drawableTint="@color/incorrect_answer"
+        android:paddingVertical="@dimen/standard_vertical_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/not_attempted_answer"
+        android:textColor="@color/option_e_answer"
+        android:text="Option-E"
+        android:visibility="visible"
+        android:textSize="@dimen/live_test_timer_text"
+        android:layout_marginStart="@dimen/standard_horizontal_padding"
+        android:fontFamily="@font/roboto_regular"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_wrong_answer"
+        android:drawablePadding="@dimen/standard_half_padding"
+        android:drawableTint="@color/option_e_answer"
+        android:paddingVertical="@dimen/standard_vertical_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/test_time"
+        android:text="Finished in 01:58"
+        android:textColor="@color/live_test_timer_text"
+        android:textSize="@dimen/live_test_timer_text"
+        android:fontFamily="@font/roboto_regular"
+        android:drawableStart="@drawable/ic_timer"
+        android:drawablePadding="@dimen/standard_half_padding"
+        android:drawableTint="@color/app_main_color"
+        android:paddingHorizontal="@dimen/standard_horizontal_padding"
+        android:paddingVertical="@dimen/standard_vertical_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

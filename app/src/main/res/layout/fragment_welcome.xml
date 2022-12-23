@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.WelcomeFragment"
+    android:background="@color/app_background_color">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/content_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="@string/welcome_purpose_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/standard_vertical_padding"
+                android:paddingHorizontal="@dimen/standard_horizontal_padding"
+                android:textSize="@dimen/welcome_page_text_size"
+                android:textColor="@color/welcome_page_main_speech_text"
+                />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/policy_agreement_mtrl_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By using this app, you're agree with our privacy policy and TnC."
+                android:layout_marginHorizontal="@dimen/standard_horizontal_padding"/>
+
+            <TextView
+                android:id="@+id/read_policy_text"
+                android:layout_width="wrap_content"
+                android:layout_marginVertical="@dimen/standard_half_padding"
+                android:layout_marginHorizontal="@dimen/standard_horizontal_padding"
+                android:layout_height="wrap_content"
+                android:text="Read Policy"
+                android:textColor="@color/app_main_color"/>
+
+            <LinearLayout
+                android:id="@+id/gdpr_status_view"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/standard_horizontal_padding"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/gdpr_consent_checking_progress_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    app:indicatorColor="@color/app_progress_circle_color"
+                    />
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="@dimen/standard_space_height"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:text="@string/gdpr_consent_message"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/proceed_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/welcome_page_proceed_btn_text"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:drawableEnd="@drawable/ic_forward"
+                android:backgroundTint="@color/welcome_page_proceed_btn_bg"
+                android:drawableTint="@color/welcome_page_proceed_btn_text"
+                android:layout_gravity="center"
+                android:text="Proceed"
+                android:enabled="false"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/update_mtrl_card_view"
+                android:layout_marginHorizontal="@dimen/standard_horizontal_padding"
+                android:layout_marginVertical="@dimen/standard_vertical_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/app_update_card_view_corner_radius"
+                app:cardBackgroundColor="@color/update_mtrl_card_view_bg"
+                app:cardElevation="@dimen/card_view_elevation">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/standard_horizontal_padding"
+                    android:paddingVertical="@dimen/standard_vertical_padding">
+
+                    <TextView
+                        android:text="Update Available"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/update_message"
+                        android:text="You're using too old version of this app. It may stop working after few days. So, better to update it now."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingVertical="@dimen/standard_vertical_padding"
+                        android:paddingHorizontal="@dimen/standard_horizontal_padding"
+                        android:textSize="@dimen/welcome_page_text_size"
+                        android:textColor="@color/welcome_page_speech_text"
+                        />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/update_btn"
+                        android:text="UPDATE NOW"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        app:backgroundTint="@color/correct_answer"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_circular"
+        android:indeterminate="true"
+        android:indeterminateBehavior="cycle"
+        app:indicatorColor="@color/app_progress_circle_color"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/err_mtrl_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/err_data_load_view_bg"
+        app:cardCornerRadius="@dimen/card_view_no_radius"
+        app:cardElevation="@dimen/card_view_elevation">
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:paddingHorizontal="@dimen/standard_horizontal_padding"
+            android:paddingVertical="@dimen/standard_half_padding"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="Failed to load. Retry"
+            android:textColor="@color/err_data_load_view_text"
+            android:textSize="@dimen/list_card_view_title_label_text_size"
+            android:drawableEnd="@drawable/ic_refresh"
+            android:drawableTint="@color/err_data_load_view_text"
+            android:drawablePadding="@dimen/standard_half_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>

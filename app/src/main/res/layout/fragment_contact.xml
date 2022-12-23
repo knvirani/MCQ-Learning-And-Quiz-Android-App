@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.essential.ContactFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/standard_horizontal_padding">
+
+        <TextView
+            android:text="How to reach us?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/policy_page_header_text"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/policy_page_header_text"/>
+
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_space_height"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/twitter_acc_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/contact_method_card_view_bg"
+            app:cardElevation="@dimen/card_view_elevation">
+
+            <TextView
+                android:text="Twitter"
+                android:textColor="@color/contact_method_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/standard_vertical_padding"
+                android:drawablePadding="@dimen/standard_half_padding"
+                android:paddingHorizontal="@dimen/standard_horizontal_padding"
+                android:drawableEnd="@drawable/ic_twitter"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="@dimen/policy_page_content_text"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_space_height"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/email_acc_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/contact_method_card_view_bg"
+            app:cardElevation="@dimen/card_view_elevation">
+
+            <TextView
+                android:text="contact\@gujmcq.in"
+                android:textColor="@color/contact_method_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/standard_vertical_padding"
+                android:drawablePadding="@dimen/standard_half_padding"
+                android:paddingHorizontal="@dimen/standard_horizontal_padding"
+                android:drawableEnd="@drawable/ic_email"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="@dimen/policy_page_content_text"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_space_height"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="We mostly reply within 7 days. Also take a note that, your contact details will be handled as per the privacy policy of this app."
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="@dimen/policy_page_content_text"
+            />
+
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_half_padding"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/read_policy_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:id="@+id/privacy_policy_btn"
+                android:layout_gravity="start"
+                android:text="READ PRIVACY POLICY"
+                android:drawableEnd="@drawable/ic_external_link"
+                android:drawableTint="@color/read_policy_card_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/standard_half_padding"
+                android:paddingVertical="@dimen/standard_vertical_padding"
+                android:textColor="@color/read_policy_card_text"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+
+</FrameLayout>

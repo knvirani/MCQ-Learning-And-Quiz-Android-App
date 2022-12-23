@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.essential.PrivacyPolicyFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/standard_horizontal_padding"
+                android:gravity="center">
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/app_logo_small"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:contentDescription="App Logo" />
+
+                </LinearLayout>
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/permission_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textSize="@dimen/policy_page_header_text"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/policy_page_header_text"/>
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/standard_half_padding"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:text="@string/permission_details"
+                        android:maxLines="2"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="@dimen/policy_page_content_text"
+                        android:textColor="@color/policy_page_content_text"
+                        />
+
+                </LinearLayout>
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/standard_horizontal_padding" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/information_we_collect_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textSize="@dimen/policy_page_header_text"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/policy_page_header_text"/>
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/standard_half_padding"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:text="@string/information_we_collect_details"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@color/policy_page_content_text"
+                        />
+
+                </LinearLayout>
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/standard_horizontal_padding" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/mtrl_card_view"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:id="@+id/privacy_policy_btn"
+                        android:layout_gravity="start"
+                        android:text="READ FULL PRIVACY POLICY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTint="@color/read_policy_card_text"
+                        android:drawableEnd="@drawable/ic_external_link"
+                        android:drawablePadding="@dimen/standard_half_padding"
+                        android:paddingVertical="@dimen/standard_vertical_padding"
+                        android:textColor="@color/read_policy_card_text"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/standard_space_height" />
+
+                <LinearLayout
+                    android:id="@+id/gdpr_status_view"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        android:id="@+id/gdpr_consent_checking_progress_indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:indeterminate="true"
+                        app:indicatorInset="1dp"
+                        app:indicatorColor="@color/app_progress_circle_color"
+                        />
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="@dimen/standard_space_height"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:text="@string/gdpr_consent_message"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/standard_space_height" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/accept_btn"
+                        android:layout_gravity="center"
+                        android:text="Accept and Continue"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/app_main_color"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

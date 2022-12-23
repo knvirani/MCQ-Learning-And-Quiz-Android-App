@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_background_color"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/test_interpret_guide_container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="How to interpret?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="@dimen/test_mcq_question_size"
+            android:textColor="@color/how_to_interpret_text_title"
+            android:paddingVertical="@dimen/standard_half_padding"
+            android:paddingHorizontal="@dimen/standard_horizontal_padding"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/standard_horizontal_padding">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/standard_half_padding"
+                android:textSize="@dimen/mtrl_dialog_selector_text_size"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingVertical="@dimen/mtrl_dialog_selector_text_vertical_padding"
+                android:text="Correct"
+                android:buttonTint="@color/correct_answer"
+                android:checked="true"
+                android:enabled="false"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/standard_half_padding"
+                android:textSize="@dimen/mtrl_dialog_selector_text_size"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingVertical="@dimen/mtrl_dialog_selector_text_vertical_padding"
+                android:text="Incorrect"
+                android:buttonTint="@color/incorrect_answer"
+                android:checked="true"
+                android:enabled="false"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/mtrl_dialog_selector_text_size"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingVertical="@dimen/mtrl_dialog_selector_text_vertical_padding"
+                android:text="Option E"
+                android:buttonTint="@color/option_e_answer"
+                android:checked="true"
+                android:enabled="false"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/standard_horizontal_padding">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/do_not_show_again_mtrl_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't show again"
+                android:fontFamily="@font/roboto_regular"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:background="@color/dynamic_divider_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dynamic_divider_height"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_vertical_padding"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result is saved. Wanna see results of other tests?"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="@dimen/live_test_timer_text"
+            android:paddingHorizontal="@dimen/standard_horizontal_padding"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/open_previous_results_mtrl_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="@dimen/card_view_elevation"
+            app:cardBackgroundColor="@color/app_background_color"
+            >
+
+            <TextView
+                android:text="Just Click Here"
+                android:paddingVertical="@dimen/standard_vertical_padding"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="@dimen/live_test_timer_text"
+                android:textColor="@color/view_expanded_result_text"
+                android:drawableTint="@color/view_expanded_result_drawable_tint"
+                android:drawableEnd="@drawable/ic_forward"
+                android:layout_marginHorizontal="@dimen/standard_horizontal_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:background="@color/app_background_color"
+        android:id="@+id/shareable_test_result"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@color/dynamic_divider_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dynamic_divider_height"/>
+
+        <FrameLayout
+            android:id="@+id/result_container"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/app_logo_small"/>
+
+            <TextView
+                android:text="Test Result"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_gravity="center"
+                android:paddingVertical="@dimen/standard_vertical_padding"
+                android:textSize="@dimen/test_result_title_text_size"
+                android:fontFamily="@font/roboto_regular"
+                android:textStyle="bold"
+                android:textColor="@color/test_result_title"
+                android:drawableEnd="@drawable/ic_verified"
+                android:drawablePadding="@dimen/standard_half_padding"
+                android:drawableTint="@color/app_main_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </FrameLayout>
+
+        <View
+            android:background="@color/dynamic_divider_color"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dynamic_divider_half_height"/>
+
+        <TextView
+            android:text="Summary"
+            android:paddingVertical="@dimen/standard_half_padding"
+            android:paddingHorizontal="@dimen/standard_vertical_padding"
+            android:textSize="@dimen/test_result_sub_title_text_size"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/summary_result_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/dynamic_divider_color"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dynamic_divider_half_height"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/standard_vertical_padding"
+            android:paddingHorizontal="@dimen/standard_horizontal_padding">
+
+            <TextView
+                android:id="@+id/test_title"
+                android:text="Gujarati Grammer"
+                android:textColor="@color/live_test_timer_text"
+                android:textSize="@dimen/live_test_timer_text"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginEnd="@dimen/standard_half_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/test_sub_title"
+                android:text="Synonyms"
+                android:textColor="@color/live_test_timer_text"
+                android:textSize="@dimen/live_test_timer_text"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginEnd="@dimen/standard_half_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/test_name"
+                android:text="MCQ Test - 41"
+                android:textColor="@color/live_test_timer_text"
+                android:textSize="@dimen/live_test_timer_text"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginEnd="@dimen/standard_half_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_marginBottom="@dimen/mtrl_dialog_selector_text_vertical_padding"
+            android:visibility="gone"
+            android:background="@color/dynamic_divider_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dynamic_divider_half_height"/>
+
+        <TextView
+            android:id="@+id/test_time"
+            android:text="Finished in 01:58"
+            android:textColor="@color/live_test_timer_text"
+            android:textSize="@dimen/live_test_timer_text"
+            android:fontFamily="@font/roboto_regular"
+            android:drawableStart="@drawable/ic_timer"
+            android:drawablePadding="@dimen/standard_half_padding"
+            android:drawableTint="@color/app_main_color"
+            android:paddingHorizontal="@dimen/standard_horizontal_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/mtrl_dialog_selector_text_vertical_padding">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/total_correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/standard_half_padding"
+                android:layout_marginEnd="@dimen/standard_horizontal_padding"
+                android:textSize="@dimen/mtrl_dialog_selector_text_size"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingVertical="@dimen/mtrl_dialog_selector_text_vertical_padding"
+                android:text="5/10"
+                android:buttonTint="@color/correct_answer"
+                android:checked="true"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/total_incorrect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/standard_horizontal_padding"
+                android:paddingHorizontal="@dimen/standard_half_padding"
+                android:textSize="@dimen/mtrl_dialog_selector_text_size"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingVertical="@dimen/mtrl_dialog_selector_text_vertical_padding"
+                android:text="3/10"
+                android:buttonTint="@color/incorrect_answer"
+                android:checked="true"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/total_option_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/standard_half_padding"
+                android:textSize="@dimen/mtrl_dialog_selector_text_size"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingVertical="@dimen/mtrl_dialog_selector_text_vertical_padding"
+                android:text="2/10"
+                android:buttonTint="@color/option_e_answer"
+                android:checked="true"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:background="@color/dynamic_divider_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dynamic_divider_height"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/share_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/app_background_color"
+        app:cardElevation="@dimen/card_view_elevation"
+        app:cardCornerRadius="@dimen/card_view_no_radius">
+
+        <TextView
+            android:text="Share My Result"
+            android:layout_gravity="center"
+            android:paddingHorizontal="@dimen/standard_horizontal_padding"
+            android:paddingVertical="@dimen/standard_vertical_padding"
+            android:textSize="@dimen/test_result_share_text_size"
+            android:drawableStart="@drawable/ic_share"
+            android:drawablePadding="@dimen/standard_half_padding"
+            android:textColor="@color/share_result_text"
+            android:drawableTint="@color/share_result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <View
+        android:id="@+id/unnecessary_divider_in_detailed_result"
+        android:background="@color/dynamic_divider_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dynamic_divider_height"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/view_result_in_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/app_background_color"
+        app:cardElevation="@dimen/card_view_elevation"
+        app:cardCornerRadius="@dimen/card_view_no_radius">
+
+        <TextView
+            android:text="Expand result in detail"
+            android:layout_gravity="center"
+            android:paddingVertical="@dimen/standard_vertical_padding"
+            android:textSize="@dimen/test_result_share_text_size"
+            android:layout_marginHorizontal="@dimen/standard_horizontal_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/view_expanded_result_text"
+            android:drawableTint="@color/view_expanded_result_drawable_tint"
+            android:drawablePadding="@dimen/standard_horizontal_padding"
+            android:drawableEnd="@drawable/ic_forward"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

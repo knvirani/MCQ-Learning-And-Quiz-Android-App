@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_vertical_padding"/>
+
+    <TextView
+        android:text="@string/rules_of_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/standard_horizontal_padding"
+        android:textSize="@dimen/card_view_subtitle_label_text_size"
+        android:textColor="@color/live_test_rules_text"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_vertical_padding"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard_vertical_padding"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/standard_horizontal_padding"
+            android:textSize="@dimen/card_view_subtitle_label_text_size"
+            android:textColor="@color/card_view_subtitle_label"
+            />
+
+        <TextView
+            android:text="@string/no_modification_in_selected_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/standard_horizontal_padding"
+            android:textSize="@dimen/card_view_subtitle_label_text_size"
+            android:textColor="@color/card_view_subtitle_label"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard_vertical_padding"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/standard_horizontal_padding"
+            android:textSize="@dimen/card_view_subtitle_label_text_size"
+            android:textColor="@color/card_view_subtitle_label"
+            />
+
+        <TextView
+            android:text="@string/you_can_skip_mcq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/standard_horizontal_padding"
+            android:textSize="@dimen/card_view_subtitle_label_text_size"
+            android:textColor="@color/card_view_subtitle_label"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard_vertical_padding"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/standard_horizontal_padding"
+            android:textSize="@dimen/card_view_subtitle_label_text_size"
+            android:textColor="@color/card_view_subtitle_label"
+            />
+
+        <TextView
+            android:text="@string/no_time_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/standard_horizontal_padding"
+            android:textSize="@dimen/card_view_subtitle_label_text_size"
+            android:textColor="@color/card_view_subtitle_label"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard_vertical_padding"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/standard_horizontal_padding"
+            android:textSize="@dimen/card_view_subtitle_label_text_size"
+            android:textColor="@color/card_view_subtitle_label"
+            />
+
+        <TextView
+            android:text="@string/cancel_exam_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/standard_horizontal_padding"
+            android:textSize="@dimen/card_view_subtitle_label_text_size"
+            android:textColor="@color/card_view_subtitle_label"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard_vertical_padding"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/standard_horizontal_padding"
+            android:textSize="@dimen/card_view_subtitle_label_text_size"
+            android:textColor="@color/card_view_subtitle_label"
+            />
+
+        <TextView
+            android:text="@string/mcq_image_handler_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/standard_horizontal_padding"
+            android:textSize="@dimen/card_view_subtitle_label_text_size"
+            android:textColor="@color/card_view_subtitle_label"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard_vertical_padding"
+        android:paddingHorizontal="@dimen/standard_horizontal_padding"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/standard_half_padding"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:src="@drawable/ic_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/standard_horizontal_padding"/>
+
+        <TextView
+            android:text="@string/figure_is_being_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/standard_horizontal_padding"
+            android:textSize="@dimen/card_view_subtitle_label_text_size"
+            android:textColor="@color/card_view_subtitle_label"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard_vertical_padding"
+        android:paddingHorizontal="@dimen/standard_horizontal_padding"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/standard_half_padding"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:src="@drawable/ic_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/standard_horizontal_padding"/>
+
+        <TextView
+            android:text="@string/figure_is_failed_to_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/standard_horizontal_padding"
+            android:textSize="@dimen/card_view_subtitle_label_text_size"
+            android:textColor="@color/card_view_subtitle_label"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard_vertical_padding"
+        android:paddingHorizontal="@dimen/standard_horizontal_padding"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/standard_half_padding"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:src="@drawable/ic_fullscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/standard_horizontal_padding"/>
+
+        <TextView
+            android:text="@string/figure_is_ready"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/standard_horizontal_padding"
+            android:textSize="@dimen/card_view_subtitle_label_text_size"
+            android:textColor="@color/card_view_subtitle_label"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard_vertical_padding"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/standard_horizontal_padding"
+            android:textSize="@dimen/card_view_subtitle_label_text_size"
+            android:textColor="@color/card_view_subtitle_label"
+            />
+
+        <TextView
+            android:text="@string/can_contact_for_dis_satisfaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/standard_horizontal_padding"
+            android:textSize="@dimen/card_view_subtitle_label_text_size"
+            android:textColor="@color/card_view_subtitle_label"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

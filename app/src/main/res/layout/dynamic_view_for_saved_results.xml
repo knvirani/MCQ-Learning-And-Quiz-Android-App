@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_vertical_padding"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/standard_horizontal_padding">
+
+        <TextView
+            android:id="@+id/test_index"
+            android:text="#123"
+            android:textColor="@color/saved_result_row_index_text"
+            android:textSize="@dimen/live_test_timer_text"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/test_time"
+            android:text="Finished in 08:57"
+            android:textColor="@color/live_test_timer_text"
+            android:textSize="@dimen/live_test_timer_text"
+            android:fontFamily="@font/roboto_regular"
+            android:paddingHorizontal="@dimen/standard_horizontal_padding"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_half_padding"/>
+
+    <TextView
+        android:id="@+id/test_name"
+        android:text="MCQ Test - 41"
+        android:textColor="@color/live_test_timer_text"
+        android:textSize="@dimen/live_test_timer_text"
+        android:fontFamily="@font/roboto_regular"
+        android:paddingHorizontal="@dimen/standard_horizontal_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_marginTop="@dimen/standard_vertical_padding"
+        android:visibility="gone"
+        android:background="@color/dynamic_divider_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dynamic_divider_half_height"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/standard_vertical_padding"
+        android:paddingHorizontal="@dimen/standard_horizontal_padding">
+
+        <TextView
+            android:id="@+id/test_title"
+            android:text="Gujarati Grammer"
+            android:textColor="@color/live_test_timer_text"
+            android:textSize="@dimen/live_test_timer_text"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginEnd="@dimen/standard_half_padding"
+            android:drawableStart="@drawable/ic_subject"
+            android:drawablePadding="@dimen/standard_half_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/test_sub_title"
+            android:text="Synonyms"
+            android:textColor="@color/live_test_timer_text"
+            android:textSize="@dimen/live_test_timer_text"
+            android:fontFamily="@font/roboto_regular"
+            android:drawableStart="@drawable/ic_sub_directory_right"
+            android:drawablePadding="@dimen/standard_half_padding"
+            android:layout_marginEnd="@dimen/standard_half_padding"
+            android:layout_marginStart="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:background="@color/dynamic_divider_color"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/dynamic_divider_half_height"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/mtrl_dialog_selector_text_vertical_padding">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/total_correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/standard_half_padding"
+            android:layout_marginEnd="@dimen/standard_horizontal_padding"
+            android:textSize="@dimen/mtrl_dialog_selector_text_size"
+            android:fontFamily="@font/roboto_regular"
+            android:paddingVertical="@dimen/mtrl_dialog_selector_text_vertical_padding"
+            android:text="5/10"
+            android:buttonTint="@color/correct_answer"
+            android:checked="true"/>
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/total_incorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/standard_horizontal_padding"
+            android:paddingHorizontal="@dimen/standard_half_padding"
+            android:textSize="@dimen/mtrl_dialog_selector_text_size"
+            android:fontFamily="@font/roboto_regular"
+            android:paddingVertical="@dimen/mtrl_dialog_selector_text_vertical_padding"
+            android:text="3/10"
+            android:buttonTint="@color/incorrect_answer"
+            android:checked="true"/>
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/total_option_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/standard_half_padding"
+            android:textSize="@dimen/mtrl_dialog_selector_text_size"
+            android:fontFamily="@font/roboto_regular"
+            android:paddingVertical="@dimen/mtrl_dialog_selector_text_vertical_padding"
+            android:text="2/10"
+            android:buttonTint="@color/option_e_answer"
+            android:checked="true"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

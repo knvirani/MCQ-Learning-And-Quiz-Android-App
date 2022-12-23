@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/options_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/standard_horizontal_padding">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/option_1_mtrl_card_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/standard_half_padding"
+            app:strokeColor="@color/dynamic_divider_color"
+            app:strokeWidth="@dimen/option_card_view_stroke_width"
+            app:cardElevation="@dimen/card_view_elevation"
+            app:cardBackgroundColor="@color/app_background_color"
+            app:cardCornerRadius="@dimen/card_view_no_radius">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/option_1_mtrl_radio_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/standard_half_padding"
+                android:textSize="@dimen/mtrl_dialog_selector_text_size"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingVertical="@dimen/mtrl_dialog_selector_text_vertical_padding"
+                android:text="A"
+                app:buttonTint="@color/live_test_radio_tint_color"
+                app:useMaterialThemeColors="true"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/option_2_mtrl_card_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/standard_half_padding"
+            app:strokeColor="@color/dynamic_divider_color"
+            app:strokeWidth="@dimen/option_card_view_stroke_width"
+            app:cardElevation="@dimen/card_view_elevation"
+            app:cardBackgroundColor="@color/app_background_color"
+            app:cardCornerRadius="@dimen/card_view_no_radius">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/option_2_mtrl_radio_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/standard_half_padding"
+                android:textSize="@dimen/mtrl_dialog_selector_text_size"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingVertical="@dimen/mtrl_dialog_selector_text_vertical_padding"
+                app:buttonTint="@color/live_test_radio_tint_color"
+                android:text="B" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/option_3_mtrl_card_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/standard_half_padding"
+            app:strokeColor="@color/dynamic_divider_color"
+            app:strokeWidth="@dimen/option_card_view_stroke_width"
+            app:cardElevation="@dimen/card_view_elevation"
+            app:cardBackgroundColor="@color/app_background_color"
+            app:cardCornerRadius="@dimen/card_view_no_radius">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/option_3_mtrl_radio_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/standard_half_padding"
+                android:textSize="@dimen/mtrl_dialog_selector_text_size"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingVertical="@dimen/mtrl_dialog_selector_text_vertical_padding"
+                app:buttonTint="@color/live_test_radio_tint_color"
+                android:text="C" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/option_4_mtrl_card_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/standard_half_padding"
+            app:strokeColor="@color/dynamic_divider_color"
+            app:strokeWidth="@dimen/option_card_view_stroke_width"
+            app:cardElevation="@dimen/card_view_elevation"
+            app:cardBackgroundColor="@color/app_background_color"
+            app:cardCornerRadius="@dimen/card_view_no_radius">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/option_4_mtrl_radio_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/standard_half_padding"
+                android:textSize="@dimen/mtrl_dialog_selector_text_size"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingVertical="@dimen/mtrl_dialog_selector_text_vertical_padding"
+                app:buttonTint="@color/live_test_radio_tint_color"
+                android:text="D" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/option_5_mtrl_card_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:strokeColor="@color/dynamic_divider_color"
+            app:strokeWidth="@dimen/option_card_view_stroke_width"
+            app:cardElevation="@dimen/card_view_elevation"
+            app:cardBackgroundColor="@color/app_background_color"
+            app:cardCornerRadius="@dimen/card_view_no_radius">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/option_5_mtrl_radio_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/standard_half_padding"
+                android:textSize="@dimen/mtrl_dialog_selector_text_size"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingVertical="@dimen/mtrl_dialog_selector_text_vertical_padding"
+                app:buttonTint="@color/live_test_radio_tint_color"
+                android:text="E" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RadioGroup>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

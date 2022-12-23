@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/standard_horizontal_padding"
+    android:background="@color/app_background_color">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_vertical_padding"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_vertical_padding"/>
+
+    <TextView
+        android:text="@string/review_dialog_headline"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_width="wrap_content"
+        android:textColor="@color/ratings_popup_headline"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_vertical_padding"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/review_ask_btn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_regular"
+        android:textStyle="bold"
+        android:backgroundTint="@color/ratings_popup_btn_bg_tint"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:text="@string/review_now_btn"
+        android:layout_marginHorizontal="@dimen/standard_horizontal_padding"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_vertical_padding"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_vertical_padding"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

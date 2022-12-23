@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <color name="normal_background" tools:ignore="MissingDefaultResource">#333333</color>
+    <color name="normal_text" tools:ignore="MissingDefaultResource">@color/white</color>
+
+    <color name="welcome_page_speech_text">@color/black</color>
+    <color name="welcome_page_proceed_btn_bg">@color/teal_200</color>
+    <color name="welcome_page_proceed_btn_text">@color/black</color>
+    <color name="welcome_page_main_speech_text">@color/normal_text</color>
+    <color name="app_background_color">@color/normal_background</color>
+
+    <color name="material_dialog_positive_btn">@color/teal_200</color>
+    <color name="material_dialog_negative_btn">#fdfdfd</color>
+    <color name="material_dialog_neutral_btn">#fdfdfd</color>
+
+    <color name="card_view_title_label">@color/teal_200</color>
+    <color name="card_view_subtitle_label">@color/normal_text</color>
+
+    <color name="app_main_color">#2196F3</color>
+    <color name="app_actionbar_title">#697D8C</color>
+    <color name="app_actionbar_background">#293035</color>
+    <color name="app_actionbar_icon">@color/app_actionbar_title</color>
+    <color name="app_status_bar_background">@color/app_actionbar_background</color>
+    <color name="app_actionbar_divider">#404B53</color>
+    <color name="normal_divider">#555555</color>
+
+    <color name="nav_header_title_text">@color/normal_text</color>
+
+    <color name="list_card_view_title_label">@color/normal_text</color>
+
+    <color name="native_ad_cta_bg">#293035</color>
+    <color name="native_ad_cta_text">#2196F3</color>
+    <color name="native_ad_headline_text">@color/normal_text</color>
+    <color name="native_ad_placeholder_bg">#566A68</color>
+    <color name="native_ad_desc_text">@color/normal_text</color>
+    <color name="native_ad_advertiser_text">@color/normal_text</color>
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="dynamic_divider_color">#444444</color>
+    <color name="dynamic_divider_color_for_result_history">#444444</color>
+
+    <color name="test_mcq_question">@color/normal_text</color>
+    <color name="test_mcq_options">@color/normal_text</color>
+    <color name="green_background_for_matched_option">#9C007809</color>
+
+    <color name="live_test_rules_text">@color/teal_200</color>
+    <color name="live_test_timer_text">@color/normal_text</color>
+    <color name="live_test_radio_tint_color">@color/teal_200</color>
+    <color name="check_result_btn_text">@color/black</color>
+    <color name="check_result_btn_bg">@color/teal_200</color>
+    <color name="expanded_result_label">@color/teal_200</color>
+    <color name="summary_result_label">@color/teal_200</color>
+    <color name="test_result_title">@color/normal_text</color>
+
+    <color name="test_start_btn_bg_tint">@color/teal_200</color>
+    <color name="test_start_btn_text">@color/black</color>
+
+    <color name="share_result_text">@color/teal_200</color>
+    <color name="view_expanded_result_text">@color/normal_text</color>
+    <color name="view_expanded_result_drawable_tint">@color/teal_200</color>
+    <color name="saved_result_row_index_text">@color/teal_200</color>
+
+    <color name="contact_method_card_view_bg">@color/app_actionbar_background</color>
+    <color name="contact_method_text_color">@color/normal_text</color>
+
+    <color name="read_policy_card_bg">@color/app_background_color</color>
+    <color name="read_policy_card_text">@color/teal_200</color>
+
+    <color name="policy_page_header_text">@color/teal_200</color>
+    <color name="policy_page_content_text">@color/normal_text</color>
+
+    <color name="about_page_app_title_text">@color/normal_text</color>
+
+    <color name="issue_submit_btn">@color/teal_200</color>
+
+    <color name="live_test_radio_btn_color">@color/teal_200</color>
+
+    <color name="image_viewer_popup_title_text">@color/normal_text</color>
+    <color name="image_viewer_close">@color/teal_200</color>
+
+    <color name="image_enlarge_btn">@color/teal_200</color>
+
+    <!-- Ratings Popup Window -->
+    <color name="ratings_popup_headline">@color/normal_text</color>
+    <color name="ratings_popup_btn_bg_tint">@color/app_main_color</color>
+
+    <color name="default_theme_dynamic_divider">#AAAAAA</color>
+    <color name="default_theme_app_title_text">@color/white</color>
+
+</resources>

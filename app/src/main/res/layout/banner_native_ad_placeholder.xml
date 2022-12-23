@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginHorizontal="@dimen/standard_horizontal_padding"
+        android:layout_marginVertical="@dimen/standard_vertical_padding"
+        android:background="@color/native_ad_placeholder_bg"
+        android:layout_width="88dp"
+        android:layout_height="58dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginVertical="@dimen/standard_horizontal_padding"
+        android:layout_marginEnd="@dimen/standard_vertical_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:src="@drawable/advertise_badge"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginHorizontal="@dimen/standard_horizontal_padding"
+                android:layout_marginStart="@dimen/standard_vertical_padding"
+                android:background="@color/native_ad_placeholder_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="@dimen/standard_half_padding"
+            android:background="@color/native_ad_placeholder_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_vertical_padding"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/standard_horizontal_padding">
+
+        <TextView
+            android:id="@+id/total_tests"
+            android:text="9841"
+            android:textColor="@color/app_main_color"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="72sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/total_tests"
+            android:textColor="@color/live_test_timer_text"
+            android:textSize="@dimen/live_test_timer_text"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_vertical_padding"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/standard_horizontal_padding">
+
+        <TextView
+            android:id="@+id/total_hours"
+            android:text="0.35"
+            android:textColor="@color/app_main_color"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="72sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/total_hours"
+            android:textColor="@color/live_test_timer_text"
+            android:textSize="@dimen/live_test_timer_text"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_vertical_padding"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.fourshape.a4mcqplus.MainActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/app_actionbar_background"
+            android:elevation="@dimen/appbar_elevation">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/materialToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/appbar_elevation"
+                app:title="@string/app_name"
+                app:menu="@menu/main_activity_action_bar"
+                app:titleTextColor="@color/app_actionbar_title"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+            <View
+                android:background="@color/app_actionbar_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/banner_ad_container"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_banner_ad_container_height">
+
+        <FrameLayout
+            android:id="@+id/banner_ad_parent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_banner_ad_container_height"/>
+
+        <!--
+        <ImageView
+            android:src="@drawable/advertise_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+            -->
+
+        <View
+            android:layout_gravity="top"
+            android:background="@color/app_actionbar_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="nav_header_title_text">@color/black</color>
+
+    <color name="app_main_color">#2196F3</color>
+    <color name="app_actionbar_title">@color/app_main_color</color>
+    <color name="app_actionbar_background">@color/white</color>
+    <color name="app_actionbar_icon">#111111</color>
+    <color name="app_status_bar_background">@color/white</color>
+    <color name="app_actionbar_divider">#DFDFDF</color>
+    <color name="normal_divider">#DFDFDF</color>
+
+    <color name="policy_page_header_text">@color/black</color>
+    <color name="policy_page_content_text">#C6C6C6</color>
+    <color name="read_policy_btn_text">#039BE5</color>
+
+    <color name="contact_method_card_view_bg">#FAFAFA</color>
+    <color name="contact_method_text_color">@color/black</color>
+
+    <color name="about_page_app_title_text">@color/black</color>
+    <color name="welcome_page_proceed_btn_bg">@color/app_main_color</color>
+    <color name="welcome_page_speech_text">#4d4d4d</color>
+    <color name="welcome_page_proceed_btn_text">@color/white</color>
+    <color name="welcome_page_main_speech_text">#4d4d4d</color>
+    <color name="app_background_color">@color/white</color>
+
+    <color name="app_progress_circle_color">#C6C6C6</color>
+
+    <color name="material_dialog_positive_btn">@color/app_main_color</color>
+    <color name="material_dialog_negative_btn">#4d4d4d</color>
+    <color name="material_dialog_neutral_btn">#6d6d6d</color>
+
+    <color name="card_view_title_label">@color/app_main_color</color>
+    <color name="card_view_subtitle_label">#4d4d4d</color>
+    <color name="image_enlarge_btn">@color/app_main_color</color>
+
+    <color name="list_card_view_title_label">#1d1d1d</color>
+
+    <color name="native_ad_cta_bg">#CBE8FF</color>
+    <color name="native_ad_cta_text">#2196F3</color>
+    <color name="native_ad_headline_text">#4d4d4d</color>
+    <color name="native_ad_placeholder_bg">#D3D3D3</color>
+    <color name="native_ad_desc_text">#7d7d7d</color>
+    <color name="native_ad_advertiser_text">#7d7d7d</color>
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="dynamic_divider_color">#F5F5F5</color>
+    <color name="dynamic_divider_color_for_result_history">#C8C8C8</color>
+
+    <color name="test_mcq_question">@color/black</color>
+    <color name="test_mcq_options">#4d4d4d</color>
+
+    <color name="green_background_for_matched_option">#E8F5E9</color>
+
+    <color name="live_test_rules_text">@color/black</color>
+    <color name="live_test_cancel_btn_color">#F44336</color>
+    <color name="live_test_cancel_text_color">@color/white</color>
+    <color name="live_test_skip_btn_color">#FFC107</color>
+    <color name="live_test_skip_text_color">@color/white</color>
+    <color name="live_test_timer_text">#4d4d4d</color>
+    <color name="total_filled_question_icon">#E91E63</color>
+    <color name="live_test_radio_tint_color">@color/app_main_color</color>
+
+    <color name="test_start_btn_bg_tint">@color/app_main_color</color>
+    <color name="test_start_btn_text">@color/white</color>
+
+    <color name="correct_answer">#4CAF50</color>
+    <color name="incorrect_answer">#F44336</color>
+    <color name="option_e_answer">#FFC107</color>
+    <color name="test_result_title">@color/black</color>
+    <color name="how_to_interpret_text_title">#C8C8C8</color>
+    <color name="test_result_sub_title">#4d4d4d</color>
+    <color name="challenge_text_color">@color/app_main_color</color>
+    <color name="summary_result_label">#4d4d4d</color>
+
+    <color name="check_result_btn_text">@color/white</color>
+    <color name="check_result_btn_bg">@color/correct_answer</color>
+    <color name="expanded_result_label">#4d4d4d</color>
+
+    <color name="normal_radio_btn_tint">#BDBDBD</color>
+
+    <color name="image_viewer_popup_title_text">@color/black</color>
+    <color name="image_viewer_close">@color/app_main_color</color>
+
+    <color name="err_data_load_view_bg">#F44336</color>
+    <color name="err_data_load_view_text">@color/white</color>
+
+    <color name="update_mtrl_card_view_bg">#EBFFEB</color>
+
+    <color name="share_result_text">@color/app_main_color</color>
+    <color name="view_expanded_result_text">#4d4d4d</color>
+    <color name="view_expanded_result_drawable_tint">@color/app_main_color</color>
+    <color name="saved_result_row_index_text">@color/black</color>
+
+    <color name="read_policy_card_bg">@color/white</color>
+    <color name="read_policy_card_text">@color/app_main_color</color>
+
+    <color name="issue_submit_btn">@color/app_main_color</color>
+
+    <color name="live_test_radio_btn_color">@color/app_main_color</color>
+
+    <!-- Ratings Popup Window -->
+    <color name="ratings_popup_headline">@color/black</color>
+    <color name="ratings_popup_btn_bg_tint">@color/app_main_color</color>
+
+    <!-- Dynamic Views -->
+    <color name="default_theme_dynamic_divider">#C2E1FF</color>
+    <color name="default_theme_app_title_text">#1d1d1d</color>
+
+    <color name="about_primary_color_text_bg">#CEE2FF</color>
+    <color name="about_more_apps_btn_bg">#3F51B5</color>
+
+</resources>

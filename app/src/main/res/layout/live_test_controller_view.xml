@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cancel_test_card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/live_test_cancel_btn_color"
+        app:cardElevation="@dimen/card_view_elevation"
+        app:cardCornerRadius="@dimen/card_view_no_radius">
+
+        <TextView
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/live_test_controller_text_size"
+            android:textColor="@color/live_test_cancel_text_color"
+            android:fontFamily="@font/roboto_regular"
+            android:textStyle="bold"
+            android:paddingVertical="@dimen/standard_half_padding"
+            android:paddingHorizontal="@dimen/standard_half_padding"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/standard_half_padding"
+        android:paddingHorizontal="@dimen/standard_half_padding">
+
+        <TextView
+            android:id="@+id/test_time"
+            android:text="00:00"
+            android:textColor="@color/live_test_timer_text"
+            android:textSize="@dimen/live_test_timer_text"
+            android:fontFamily="@font/roboto_regular"
+            android:drawableStart="@drawable/ic_timer"
+            android:drawablePadding="@dimen/standard_half_padding"
+            android:drawableTint="@color/app_main_color"
+            android:layout_marginEnd="@dimen/standard_half_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/test_total_filled_mcq"
+            android:text="00/00"
+            android:textColor="@color/live_test_timer_text"
+            android:textSize="@dimen/live_test_timer_text"
+            android:fontFamily="@font/roboto_regular"
+            android:drawableStart="@drawable/ic_filled_radio"
+            android:drawablePadding="@dimen/standard_half_padding"
+            android:drawableTint="@color/total_filled_question_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/skip_test_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/live_test_skip_btn_color"
+        app:cardElevation="@dimen/card_view_elevation"
+        app:cardCornerRadius="@dimen/card_view_no_radius">
+
+        <TextView
+            android:text="Skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/live_test_controller_text_size"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_regular"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingVertical="@dimen/standard_half_padding"
+            android:paddingHorizontal="@dimen/standard_horizontal_padding"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.EntryFragment"
+    android:background="@color/app_background_color">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:background="@color/dynamic_divider_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dynamic_divider_height"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/subject_wise_proceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/app_background_color"
+                app:cardCornerRadius="@dimen/card_view_no_radius"
+                app:cardElevation="@dimen/card_view_elevation">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingHorizontal="@dimen/standard_horizontal_padding"
+                        android:paddingVertical="@dimen/standard_vertical_padding"
+                        android:gravity="center"
+                        android:text="@string/subject_wise_title"
+                        android:textColor="@color/card_view_title_label"
+                        android:textSize="@dimen/card_view_title_label_text_size"
+                        android:drawableEnd="@drawable/ic_forward"
+                        android:drawableTint="@color/card_view_title_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="@string/subject_wise_entry_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/standard_horizontal_padding"
+                        android:textSize="@dimen/card_view_subtitle_label_text_size"
+                        android:drawableStart="@drawable/ic_info"
+                        android:drawablePadding="@dimen/standard_horizontal_padding"
+                        android:gravity="start|top"
+                        android:textColor="@color/card_view_subtitle_label"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/standard_space_height"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <View
+                android:background="@color/dynamic_divider_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dynamic_divider_height"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/exampaper_wise_proceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/app_background_color"
+                app:cardCornerRadius="@dimen/card_view_no_radius"
+                app:cardElevation="@dimen/card_view_elevation">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/exams_with_all_bodies_mtrl_card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/app_background_color"
+                        app:cardCornerRadius="@dimen/card_view_no_radius"
+                        app:cardElevation="@dimen/card_view_elevation">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="@dimen/standard_vertical_padding">
+
+                            <TextView
+                                android:paddingHorizontal="@dimen/standard_horizontal_padding"
+                                android:gravity="center"
+                                android:text="@string/exam_wise_title"
+                                android:textColor="@color/card_view_title_label"
+                                android:textSize="@dimen/card_view_title_label_text_size"
+                                android:drawableEnd="@drawable/ic_forward"
+                                android:drawableTint="@color/card_view_title_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:text="@string/all_exam_bodies"
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:paddingHorizontal="@dimen/standard_horizontal_padding"
+                                android:textSize="@dimen/card_view_subtitle_label_text_size"
+                                android:textColor="@color/card_view_subtitle_label"
+                                />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/exams_body_wise"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/app_background_color"
+                        app:cardCornerRadius="@dimen/card_view_no_radius"
+                        app:cardElevation="@dimen/card_view_elevation">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="@dimen/standard_vertical_padding">
+
+                            <TextView
+                                android:paddingHorizontal="@dimen/standard_horizontal_padding"
+                                android:gravity="center"
+                                android:text="@string/exam_wise_title"
+                                android:textColor="@color/card_view_title_label"
+                                android:textSize="@dimen/card_view_title_label_text_size"
+                                android:drawableEnd="@drawable/ic_forward"
+                                android:drawableTint="@color/card_view_title_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:text="@string/exam_body_wise"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingHorizontal="@dimen/standard_horizontal_padding"
+                                android:textSize="@dimen/card_view_subtitle_label_text_size"
+                                android:textColor="@color/card_view_subtitle_label"
+                                />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:text="@string/exam_wise_entry_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/standard_horizontal_padding"
+                        android:textSize="@dimen/card_view_subtitle_label_text_size"
+                        android:textColor="@color/card_view_subtitle_label"
+                        android:drawableStart="@drawable/ic_info"
+                        android:drawablePadding="@dimen/standard_horizontal_padding"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/standard_space_height"/>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <View
+                android:background="@color/dynamic_divider_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dynamic_divider_height"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

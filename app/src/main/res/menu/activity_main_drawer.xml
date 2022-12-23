@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_theme"
+            android:icon="@drawable/ic_theme_selector"
+            android:title="@string/nav_theme"/>
+        <item
+            android:id="@+id/remove_ads"
+            android:icon="@drawable/ic_verified"
+            android:title="@string/remove_ads"/>
+        <item
+            android:icon="@drawable/ic_history"
+            android:id="@+id/nav_result_history"
+            android:title="@string/saved_results"/>
+        <item
+            android:id="@+id/nav_share_app"
+            android:title="@string/nav_share_app"
+            android:icon="@drawable/ic_share"/>
+        <item
+            android:id="@+id/nav_more_apps"
+            android:title="@string/nav_more_apps"
+            android:icon="@drawable/ic_more_apps"/>
+        <item
+            android:icon="@drawable/ic_rate_review"
+            android:id="@+id/nav_rate_us"
+            android:title="@string/nav_rate_us"/>
+    </group>
+
+    <item android:title="@string/other">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:icon="@drawable/ic_external_link"
+                    android:id="@+id/nav_contact_twitter"
+                    android:title="@string/contact_on_twitter" />
+                <item
+                    android:id="@+id/nav_contact"
+                    android:title="@string/nav_contact"/>
+                <item
+                    android:id="@+id/nav_about"
+                    android:title="@string/nav_about"/>
+                <item
+                    android:id="@+id/nav_privacy_policy"
+                    android:title="@string/nav_privacy_policy"/>
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

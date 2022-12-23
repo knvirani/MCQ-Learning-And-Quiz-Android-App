@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.SolutionImageFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_circular"
+        android:indeterminate="true"
+        android:indeterminateBehavior="cycle"
+        app:indicatorColor="@color/app_progress_circle_color"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/err_mtrl_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/err_data_load_view_bg"
+        app:cardCornerRadius="@dimen/card_view_no_radius"
+        app:cardElevation="@dimen/card_view_elevation">
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:paddingHorizontal="@dimen/standard_horizontal_padding"
+            android:paddingVertical="@dimen/standard_half_padding"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="Failed to load. Retry"
+            android:textColor="@color/err_data_load_view_text"
+            android:textSize="@dimen/list_card_view_title_label_text_size"
+            android:drawableEnd="@drawable/ic_refresh"
+            android:drawableTint="@color/err_data_load_view_text"
+            android:drawablePadding="@dimen/standard_half_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>
